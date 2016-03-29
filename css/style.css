@@ -1,0 +1,218 @@
+/* Config */
+html {
+  font-size: 100%;
+  font-family: "Lato", sans-serif;
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+@-ms-viewport {
+  width: device-width;
+}
+a {
+  color: white;
+  font-weight: 400;
+  text-decoration: none;
+}
+a:hover {
+  color: #bbaad2;
+}
+
+/* Animation */
+@-webkit-keyframes scale {
+  0% {
+    -webkit-transform: scale3d(1, 1, 1);
+            transform: scale3d(1, 1, 1);
+  }
+  50% {
+    -webkit-transform: scale3d(1.25, 1.25, 1);
+            transform: scale3d(1.25, 1.25, 1);
+  }
+  70% {
+    -webkit-transform: scale3d(1.35, 1.35, 1);
+            transform: scale3d(1.35, 1.35, 1);
+  }
+  100% {
+    -webkit-transform: scale3d(1.5, 1.5, 1);
+            transform: scale3d(1.5, 1.5, 1);
+  }
+}
+@keyframes scale {
+  0% {
+    -webkit-transform: scale3d(1, 1, 1);
+            transform: scale3d(1, 1, 1);
+  }
+  50% {
+    -webkit-transform: scale3d(1.25, 1.25, 1);
+            transform: scale3d(1.25, 1.25, 1);
+  }
+  70% {
+    -webkit-transform: scale3d(1.35, 1.35, 1);
+            transform: scale3d(1.35, 1.35, 1);
+  }
+  100% {
+    -webkit-transform: scale3d(1.5, 1.5, 1);
+            transform: scale3d(1.5, 1.5, 1);
+  }
+}
+@-webkit-keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+body {
+  text-align: center;
+  font-weight: 300;
+  color: white;
+  background-color: rgba(33, 33, 33, 0.9);
+  line-height: 1.45;
+}
+
+.pad, .hero__content__heading, .hero__content__blurb {
+  padding-right: .75rem;
+  padding-left: .75rem;
+}
+
+.bg-hero {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  min-width: 100%;
+  min-height: 100%;
+  background: url("http://www.iancoble.com/media/original/7_8_11_Seattle_323_jw2-copy1.jpg") no-repeat center center;
+  background-size: cover;
+  -webkit-filter: blur(12px);
+          filter: blur(12px);
+  z-index: -999;
+  -webkit-animation: scale reverse 1s linear;
+          animation: scale reverse 1s linear;
+  -webkit-transform: translateZ(0);
+          transform: translateZ(0);
+}
+
+.bg-hero:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  background-color: #0B080F;
+  opacity: 0.7;
+  z-index: -888;
+}
+
+.fade-in {
+  opacity: 0;
+  -webkit-animation: fadeIn ease-in 1.25s;
+          animation: fadeIn ease-in 1.25s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+}
+
+/* Hero Module styles */
+.fade-in.logo {
+  -webkit-animation-delay: 1s;
+          animation-delay: 1s;
+}
+
+.fade-in.hero__content__heading {
+  -webkit-animation-delay: 1.25s;
+          animation-delay: 1.25s;
+}
+
+.fade-in.hero__content__blurb {
+  -webkit-animation-delay: 1.75s;
+          animation-delay: 1.75s;
+}
+
+.fade-in.btn {
+  -webkit-animation-delay: 2.5s;
+          animation-delay: 2.5s;
+}
+
+.fade-in.copy {
+  -webkit-animation-delay: 3.5s;
+          animation-delay: 3.5s;
+}
+
+.hero {
+  width: 100%;
+  max-width: 32em;
+  margin: 0 auto;
+  display: table;
+  height: 100vh;
+  color: white;
+  text-align: center;
+}
+
+.hero__content {
+  display: table-cell;
+  vertical-align: middle;
+  height: calc(100% - 32em);
+  margin: 1.5rem auto;
+}
+
+.hero__content__heading {
+  font-weight: 400;
+  font-size: 1.25em;
+  text-transform: uppercase;
+  margin-top: 1.5rem;
+  letter-spacing: .3em;
+}
+
+.hero__content__blurb {
+  font-size: 1.2em;
+}
+
+/* Styles */
+.logo {
+  width: 100%;
+  margin: 0 auto;
+  padding-top: 1.5rem;
+  font-size: 1.75rem;
+}
+
+.social-icons {
+  margin: 1.5rem;
+  display: block;
+}
+.social-icons a {
+  display: inline-block;
+  margin: 1em 1.75rem;
+}
+
+.copy {
+  display: block;
+  margin: 1.5rem;
+  padding-top: 1.5rem;
+  clear: both;
+  font-size: .8em;
+  text-align: center;
+  letter-spacing: .1em;
+}
+.btn {
+  background: inherit;
+  border-style: solid;
+  border-color: #A1D8C8;
+  width: 45%;
+  height: 40px;
+  color: white;
+}
+
