@@ -80,6 +80,8 @@ body {
   color: white;
   background-color: rgba(33, 33, 33, 0.9);
   line-height: 1.45;
+  margin: 0;
+  padding: 0;
 }
 
 .pad, .hero__content__heading, .hero__content__blurb {
