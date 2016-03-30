@@ -292,7 +292,7 @@ p {
   padding: 5%;
   background: #fff;
 }
-  a {
+  #container > a {
   color: #1abc9c;
   background: transparent;
   border: 3px solid #1abc9c;
@@ -313,7 +313,7 @@ p {
   -webkit-font-smoothing: antialiased;
 }
 
-a:hover {
+#container > a:hover {
   color: #fff;
   background: #1ABC9C;
   border: 3px solid #1ABC9C;
@@ -322,10 +322,10 @@ a:hover {
 
 /* font awesome icons */
 
-a:nth-of-type(1):before {
+#container > a:nth-of-type(1):before {
   content: '\f09a';
 }
 
-a:nth-of-type(2):before {
+#container > a:nth-of-type(2):before {
   content: '\f099';
 }
