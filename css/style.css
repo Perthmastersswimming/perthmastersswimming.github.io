@@ -99,8 +99,8 @@ body {
   min-height: 100%;
   background: url("http://www.iancoble.com/media/original/7_8_11_Seattle_323_jw2-copy1.jpg") no-repeat center center;
   background-size: cover;
-  -webkit-filter: blur(12px);
-          filter: blur(12px);
+  -webkit-filter: blur(8px);
+          filter: blur(8px);
   z-index: -999;
   -webkit-animation: scale reverse 1s linear;
           animation: scale reverse 1s linear;
