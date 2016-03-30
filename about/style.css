@@ -27,13 +27,13 @@ a:active {
 }
 h1 {
   font-family: 'Roboto';
-  font-weight: 400;
-  font-size: 4em;
+  font-weight: 300;
+  font-size: 3em;
   text-align: center;
 }
 h2 {
   font-family: 'Roboto';
-  font-size: 3em;
+  font-size: 2em;
   text-decoration: underline;
   color: #23aeac;
   text-align: center;
@@ -42,7 +42,7 @@ h2 {
 p {
   font-family: 'Roboto';
   text-align: center;
-  font-size: 1.2em;
+  font-size: 1em;
 }
 .outer-menu {
   position: fixed;
