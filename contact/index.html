@@ -4,7 +4,6 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <link href='https://fonts.googleapis.com/css?family=Roboto:400,700' rel='stylesheet' type='text/css'>
 <link rel="stylesheet" href="http://perthmastersswimming.github.io/contact/style.css" />
-<script src="perthmastersswimming.github.io/contact/html_form_send.php"></script>
 	<title>Perth Masters Swimming Club</title>
 </head>
 <body>
@@ -29,20 +28,15 @@
   
 <div id="form">
     
-      <form name="htmlform" method="post" action="html_form_send.php">
-            
-            <input name="Name" type="text" class="input name" placeholder="Name">
-
-            <input name="email" type="text" class="input email" placeholder="email@email.com" />
-
-            <textarea name="text" type="text" class="input message" placeholder="message"></textarea>
- 
-            <a href="#" id="send">SEND<a/>
-        
-      </form>
+      <form action="https://formspree.io/perthmastersswimming@hotmail.com"
+      method="POST">
+    <input type="text" name="name" placeholder="Name*">
+    <input type="email" name="_replyto" placeholder="Email*">
+    <textarea name="body" placeholder="Message*"></textarea>
+    <input type="submit" value="Send">
+</form>
      
    </div>
-
 
 </body>
 </html>
