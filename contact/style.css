@@ -287,7 +287,8 @@ p {
 
 .btn-cont {
   position: absolute;
-  margin-top: 400px;
+  margin-top: 300px;
+  margin-bottom: 50px;
   top: 50%;
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
@@ -295,12 +296,14 @@ p {
 }
 .btn-cont a {
   text-decoration: none;
-  margin-top: 400px;
+  margin-top: 300px;
+  margin-bottom: 50px;
 }
 .btn-cont .btn {
   text-transform: uppercase;
   color: white;
-  margin-top: 400px;
+  margin-top: 300px;
+  margin-bottom: 50px;
   text-align: center;
   font-family: 'Roboto', sans-serif;
   letter-spacing: 1px;
