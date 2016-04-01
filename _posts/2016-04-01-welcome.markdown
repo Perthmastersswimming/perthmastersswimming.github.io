@@ -1,0 +1,6 @@
+---
+published: true
+title: Welcome
+layout: post
+---
+Welcome to our new website. If you find any problems with the site, please let us know and we’ll do our best to rectify things. All club updates, social events, meets etc. will be posted here, so check back every so often, or why not subscribe to our news feed where you will automatically be sent details when news is added to the site. See you in the pool! Perth Masters
