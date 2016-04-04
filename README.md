@@ -1,4 +1,4 @@
-# perthmastersswimming.github.io
+#Perth Masters
 
 Perth Masters Swimming Club, 
 Perth masters
