@@ -1,4 +1,4 @@
 function Link1() 
 {
-    window.location = "perthmastersswimming.github.io/about/index.html";
+    window.location = "perthmasters.co.uk/about/index.html";
 }
