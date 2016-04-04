@@ -329,3 +329,15 @@ p {
 #container > a:nth-of-type(2):before {
   content: '\f099';
 }
+
+/* Home Footer */
+.homeFooter {margin-top: 10px; padding: 10px; text-align: center; background: #fff; color: #888}
+
+h4 {
+  font-family: 'Roboto';
+  font-size: 2em;
+  text-decoration: underline;
+  color: #23aeac;
+  text-align: center;
+  margin-bottom: 20px;
+}
