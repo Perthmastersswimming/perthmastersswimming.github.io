@@ -1,4 +1,4 @@
 function Link1() 
 {
-    window.location = "perthmasters.co.uk/about/index.html";
+    window.location = "http://perthmasters.co.uk/about/index.html";
 }
