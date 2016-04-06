@@ -217,4 +217,57 @@ body {
   height: 40px;
   color: white;
 }
+/* loader */
+section {
+  height: 300px;
+  line-height: 300px;
+  width: 33%;
+  mon-width: 400px;
+  float: left;
+  text-align: center;
+  font-size: 42px;
+  border: 1px solid #222;
+}
 
+.loader {
+  display: inline-block;
+  vertical-align: middle;
+  position: relative;
+  margin-right: 1em;
+}
+
+.loader-triple {
+  width: 1.5em;
+  height: 1.5em;
+  border-radius: 50%;
+  border: 3px solid transparent;
+  border-top-color: #f1c40f;
+  -webkit-animation: spin 2s linear infinite;
+          animation: spin 2s linear infinite;
+}
+.loader-triple:before {
+  content: "";
+  position: absolute;
+  top: 5px;
+  left: 5px;
+  right: 5px;
+  bottom: 5px;
+  border-radius: 50%;
+  border: 3px solid transparent;
+  border-top-color: #3498db;
+  -webkit-animation: spin 3s linear infinite;
+          animation: spin 3s linear infinite;
+}
+.loader-triple:after {
+  content: "";
+  position: absolute;
+  top: 12px;
+  left: 12px;
+  right: 12px;
+  bottom: 12px;
+  border-radius: 50%;
+  border: 3px solid transparent;
+  border-top-color: #2ecc71;
+  -webkit-animation: spin 1.5s linear infinite;
+          animation: spin 1.5s linear infinite;
+}
