@@ -288,10 +288,10 @@ figure.snip1091 {
   position: relative;
   margin-bottom: 45px;
   margin: auto;
-    top: 0;
+    top: 25px;
     left: 0;
     right: 0;
-    bottom: 0;
+    bottom: 45px;
   display: block;
   min-width: 220px;
   max-width: 310px;
