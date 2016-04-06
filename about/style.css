@@ -289,7 +289,7 @@ p {
   hieght: 500px;
   margin: 0 auto;
   text-align: center;
-  padding: 5%;
+  padding: 20px;
   background: #fff;
 }
   #container > a {
@@ -305,6 +305,7 @@ p {
   width: 40px;
   height: 40px;
   padding-top: 9px;
+  padding-bottom: 25px;
   margin: 0 4px;
   -o-transition: all .5s;
   -webkit-transition: all .5s;
