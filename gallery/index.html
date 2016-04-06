@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link href='https://fonts.googleapis.com/css?family=Roboto+Mono:400,300' rel='stylesheet' type='text/css'>
+<link rel="stylesheet" href="http://perthmasters.co.uk/gallery/style.css"/>
+<script src="http://perthmasters.co.uk/gallery/script.js"></script>
+  
+</head>
+<body>
+
+
+<div class="m-p-g">
+	<div class="m-p-g__thumbs" data-google-image-layout data-max-height="350">
+		<img src="http://perthmasters.co.uk/Perth Masters Logo.jpg" data-full="http://perthmasters.co.uk/Perth Masters Logo.jpg" class="m-p-g__thumbs-img" />
+	</div>
+
+	<div class="m-p-g__fullscreen"></div>
+</div>
+
+<script>
+	var elem = document.querySelector('.m-p-g');
+
+	document.addEventListener('DOMContentLoaded', function() {
+		var gallery = new MaterialPhotoGallery(elem);
+	});
+</script>
+
+</body>
+</html>
