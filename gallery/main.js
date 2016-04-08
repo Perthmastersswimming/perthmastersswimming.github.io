@@ -1,7 +1,7 @@
 var img = document.querySelector('img')
 
 function loaded() {
-  alert('loaded')
+  alert('DOMContentLoaded')
 }
 
 if (img.complete) {
