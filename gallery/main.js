@@ -1,14 +1,8 @@
-var img = document.querySelector('img')
-
-function loaded() {
-  alert('DOMContentLoaded')
-}
-
-if (img.complete) {
-  loaded()
-} else {
-  img.addEventListener('load', loaded)
-  img.addEventListener('error', function() {
-      alert('error')
-  })
-}
+$(document).ready(function() {
+ 
+    setTimeout(function(){
+        $('body').addClass('loaded');
+        $('h1').css('color','#222222');
+    }, 5000);
+ 
+});
