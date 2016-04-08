@@ -12,7 +12,7 @@
 <script src="http://perthmasters.co.uk/gallery/script.js"></script>
 <script src="http://perthmasters.co.uk/gallery/main.js"></script>
 </head>
-<body>
+<body onload="myFunction()" style="margin:0;">
 <div id="loader-wrapper">
     <div id="loader"></div>
   <div class="loader-section section-left"></div>
@@ -53,6 +53,17 @@
 		var gallery = new MaterialPhotoGallery(elem);
 	});
 </script>
+<script>
+var myVar;
 
+function myFunction() {
+    myVar = setTimeout(showPage, 3000);
+}
+
+function showPage() {
+  document.getElementById("loader").style.display = "none";
+  document.getElementById("myDiv").style.display = "block";
+}
+</script>
 </body>
 </html>
