@@ -46,7 +46,14 @@
 	<div class="m-p-g__fullscreen"></div>
 </div>
 <script>
-document.getElementById(“element”).className = “loaded”;
+$(document).ready(function() {
+	
+	setTimeout(function(){
+		$('body').addClass('loaded');
+		$('h1').css('color','#222222');
+	}, 3000);
+	
+});
 </script>
 <script>
 	var elem = document.querySelector('.m-p-g');
