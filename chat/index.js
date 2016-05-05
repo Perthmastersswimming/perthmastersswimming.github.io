@@ -29,7 +29,7 @@ function ai(message) {
     if(message.indexOf("membership") >= 0 || message.indexOf("member") >= 0){
       sendMessage('Find out more <a href="http://perthmasters.co.uk/membership/index.html"> here</a>');
     }  
-    if(message.indexOf("location") >= 0 || message.indexOf("perth") >= 0 || message.indexOf("pool") >= 0){
+    if(message.indexOf("location") >= 0 || message.indexOf("perth") >= 0 || message.indexOf("pool") >= 0 || message.indexOf("directions") >= 0){
       sendMessage('Find us <a href="http://perthmasters.co.uk/location/index.html"> here</a>');
     }
     if(message.indexOf("scottish") >= 0 || message.indexOf("register") >= 0 || message.indexOf("sasa") >= 0){
