@@ -23,6 +23,9 @@ function ai(message) {
   if(message.indexOf("hi") >= 0 || message.indexOf("hiya") >= 0 || message.indexOf("hello") >= 0 || message.indexOf("alright") >= 0 || message.indexOf("Alright") >= 0 || message.indexOf("Evening") >= 0 || message.indexOf("evening") >= 0 || message.indexOf("afternoon") >= 0 || message.indexOf("morning") >= 0){
       sendMessage("Hello, How are you?");
     }
+    if(message.indexOf("lottery") >= 0){
+      sendMessage('Sorry! I cannot see into the future, could i suggest you try mystic meg?');
+    } 
     if(message.indexOf("membership") >= 0 || message.indexOf("member") >= 0){
       sendMessage('Find out more <a href="http://perthmasters.co.uk/membership/index.html"> here</a>');
     }  
