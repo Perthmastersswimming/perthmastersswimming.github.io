@@ -27,13 +27,13 @@ function ai(message) {
       sendMessage('Sorry! I cannot see into the future, could i suggest you try mystic meg?');
     } 
     if(message.indexOf("membership") >= 0 || message.indexOf("member") >= 0){
-      sendMessage('Find out more <a href="http://perthmasters.co.uk/membership/index.html" target='_blank'> here</a>');
+      sendMessage('Find out more <a href="http://perthmasters.co.uk/membership/index.html" target="_blank"> here</a>');
     }  
     if(message.indexOf("location") >= 0 || message.indexOf("perth") >= 0 || message.indexOf("pool") >= 0 || message.indexOf("directions") >= 0){
-      sendMessage('Find us <a href="http://perthmasters.co.uk/location/index.html" target='_blank'> here</a>');
+      sendMessage('Find us <a href="http://perthmasters.co.uk/location/index.html" target="_blank"> here</a>');
     }
     if(message.indexOf("scottish") >= 0 || message.indexOf("register") >= 0 || message.indexOf("sasa") >= 0){
-      sendMessage('Visit scottish swimming website <a href="http://www.scottishswimming.com/" target='_blank'> here</a>');
+      sendMessage('Visit scottish swimming website <a href="http://www.scottishswimming.com/" target="_blank"> here</a>');
     }
   
     if((message.indexOf("time") >= 0) || (message.indexOf("hours") >= 0) || (message.indexOf("hour") >= 0)){
