@@ -18,19 +18,19 @@ function ai(message) {
       sendMessage("we train on a Tuesday @ 9:30pm and Thursday @ 9:00pm at perth leisure pool");
     }
     if(message.indexOf("email") >= 0 || message.indexOf("contact email") >= 0){
-      sendMessage('yes click here to email us <a href="mailto:perthmastersswimming@hotmail.com">Email Us</a>');
+      sendMessage('yes click <a href="mailto:perthmastersswimming@hotmail.com"> Here</a> to email us');
     }  
   if(message.indexOf("hi") >= 0 || message.indexOf("hiya") >= 0 || message.indexOf("hello") >= 0 || message.indexOf("alright") >= 0 || message.indexOf("Alright") >= 0 || message.indexOf("Evening") >= 0 || message.indexOf("evening") >= 0 || message.indexOf("afternoon") >= 0 || message.indexOf("morning") >= 0){
       sendMessage("Hello, How are you?");
     }
     if(message.indexOf("membership") >= 0 || message.indexOf("member") >= 0){
-      sendMessage('Find out more here <a href="http://perthmasters.co.uk/membership/index.html"> Membership Page</a>');
+      sendMessage('Find out more <a href="http://perthmasters.co.uk/membership/index.html"> here</a>');
     }  
     if(message.indexOf("location") >= 0 || message.indexOf("perth") >= 0 || message.indexOf("pool") >= 0){
-      sendMessage('Find us here <a href="http://perthmasters.co.uk/location/index.html"> Pool Location</a>');
+      sendMessage('Find us <a href="http://perthmasters.co.uk/location/index.html"> here</a>');
     }
     if(message.indexOf("scottish") >= 0 || message.indexOf("register") >= 0 || message.indexOf("sasa") >= 0){
-      sendMessage('Visit scottish swimming website here <a href="http://www.scottishswimming.com/"> Scottish Swimming</a>');
+      sendMessage('Visit scottish swimming website <a href="http://www.scottishswimming.com/"> here</a>');
     }
   
     if((message.indexOf("time") >= 0) || (message.indexOf("hours") >= 0) || (message.indexOf("hour") >= 0)){
