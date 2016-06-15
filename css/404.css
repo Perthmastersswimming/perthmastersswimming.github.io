@@ -26,7 +26,8 @@ img {
     width: 96%;
     height: 400px;
     background-image: url('http://perthmasters.co.uk/gallery/album/404%20Mainstage%20Image.jpg');
-    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-size: contain;
     margin-right:5px;
     margin-left:5px;
 }
