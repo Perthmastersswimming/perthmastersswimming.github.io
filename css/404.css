@@ -22,7 +22,7 @@ body
 }
 
 img {
-    width: 96%;
+    max-width: 96%;
     height: auto;
     background-image: url('http://perthmasters.co.uk/gallery/album/404%20Mainstage%20Image.jpg');
     background-repeat: no-repeat;
