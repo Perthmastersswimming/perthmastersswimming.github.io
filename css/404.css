@@ -24,12 +24,10 @@ body
 
 img {
     width: 96%;
-    height: 400px;
+    height: auto;
     background-image: url('http://perthmasters.co.uk/gallery/album/404%20Mainstage%20Image.jpg');
     background-repeat: no-repeat;
-    background-size: cover;
-    margin-right:5px;
-    margin-left:5px;
+    background-size: 100% 100%;
 }
 
 message
