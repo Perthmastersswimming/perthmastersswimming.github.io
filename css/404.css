@@ -24,10 +24,10 @@ body
 
 img {
     width: 96%;
-    max-height: 400px;
+    height: 400px;
     background-image: url('http://perthmasters.co.uk/gallery/album/404%20Mainstage%20Image.jpg');
     background-repeat: no-repeat;
-    background-size: contain;
+    background-size: cover;
     margin-right:5px;
     margin-left:5px;
 }
