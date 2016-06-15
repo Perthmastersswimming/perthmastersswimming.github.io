@@ -23,10 +23,11 @@ body
 }
 
 img {
-  top: 0%;
-  left: 50%;
-  margin-top: 20px;
-  margin-left: -250px;
+    width: 100%;
+    height: 400px;
+    background-image: url('http://cache.lego.com/r/www/-/media/portal%20v2010/errors/404%20mainstage%20image.jpg?l.r2=1953967734');
+    background-size: 100% 100%;
+
 }
 
 message
@@ -44,6 +45,7 @@ message
 
 h1
 {
+ margin-top: 5px; 
  margin-left:auto;
  margin-right:auto;
  font-size:34px;
