@@ -1,0 +1,260 @@
+@import url(http://getbootstrap.com/dist/css/bootstrap.min.css);
+@import url(http://fortawesome.github.io/Font-Awesome/assets/font-awesome/css/font-awesome.css);
+/*
+|--------------------------------------------------------------------------
+| #Header
+|--------------------------------------------------------------------------
+*/ 
+a, .colored {color: #1abc9c;}
+.show-menu, #menu li.current_page_item a { border-color: #1abc9c;}
+#menu > li:hover  > a, .show-menu:hover, .show-menu:active {background: #1abc9c;}
+
+header {
+	position: fixed;
+	bottom: 0;
+	left: 0;
+	z-index: 99999;
+	width: 100%;
+	background: #000 url(../images/essentials/hash.png) repeat 0 0;
+}
+
+/* Logo
+==================================================*/
+.logo-container h2, .site-title a {
+	color: white;
+}
+.logo-container .colored {
+	font-weight: lighter;
+}
+
+/* Mobile menu
+==================================================*/
+.show-menu {
+	margin: 15px auto 20px;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-ms-box-sizing: border-box;
+	box-sizing: border-box;
+	padding: 10px 15px;
+	line-height: 20px;
+	color: #FFF;
+	text-transform: uppercase;
+}
+.show-menu i {
+	float: right;
+	line-height: 20px;
+	font-size: 18px;
+}
+
+/* Main menu
+==================================================*/
+#menu li.current_page_item a, .show-menu {border-bottom-width: 2px; border-bottom-style: solid;}
+#menu li.current_page_item:hover a {border-bottom-color: white;}
+#menu {
+	float: right;
+	list-style: none;
+	padding: 0;
+	margin: 0;
+	border-right: 1px solid #111;
+	border-left: 1px solid #111;
+	overflow: hidden;
+	max-height: 75px;
+	-webkit-transition: all 0.5s ease-in-out;
+	-moz-transition: all 0.5s ease-in-out;
+	-ms-transition: all 0.5s ease-in-out;
+	-o-transition: all 0.5s ease-in-out;
+	transition: all 0.5s ease-in-out;
+}
+#menu:hover {
+  max-height: 9999px;
+	-webkit-transition: all 2s ease-in-out;
+	-moz-transition: all 2s ease-in-out;
+	-ms-transition: all 2s ease-in-out;
+	-o-transition: all 2s ease-in-out;
+	transition: all 2s ease-in-out;
+}
+#menu li:first-child, #menu li.current_page_item ul a, #menu > li > ul > li {border: none;}
+#menu > li {
+	letter-spacing: 1px;
+	text-transform: uppercase;
+	border-left: 1px solid #111;
+	display: table-cell;
+}
+#menu > li > a {
+	display: block;
+	position: relative;
+	padding: 26px 20px;
+	text-decoration: none;
+	color: white;
+}
+#menu > li:hover  > a, .nav-toggle:hover, #menu > li > ul li a:hover {color: #fff;}
+#menu > li > ul {
+	font-size: 11px;
+	list-style: none;
+	margin: 0 auto;
+	padding: 0;
+}
+#menu > li > ul li a {
+	position: relative;
+	display: block;
+	padding: 7px 20px;
+	text-decoration: none;
+	color: #888;
+}
+/* Header bottom
+==================================================*/
+#header-footer {border-top: 1px solid #111;}
+#copyright {
+	padding-top: 5px;
+	font-size: 10px;
+}
+
+/* Social list
+==================================================*/
+.social {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	float: right;
+}
+.social a, a.beam-me-up {
+	display: block;
+	text-align: center;
+	padding: 8px 15px;
+	text-decoration: none;
+	position: relative;
+	z-index: 100;
+	color: white;
+}
+.social li {
+	position: relative;
+	z-index: 100;
+	overflow: hidden;
+	float: left;
+}
+
+/* Beam me up
+==================================================*/
+a.beam-me-up { float: right; color: #DDD;}
+
+/* Tablet
+==================================================*/
+@media screen and (max-width: 1024px) {
+	body.page { padding: 0;}
+	
+	header {
+		position: relative;
+		z-index: 9999;
+		top: 0;
+		bottom: auto;
+	}
+	
+	#menu {
+		display: none;
+		float: right;
+		width: 80%;
+		max-height: none;
+		-webkit-transition: none;
+		-moz-transition: none;
+		-ms-transition: none;
+		-o-transition: none;
+		transition: none;
+		border: none;
+	}
+	#menu:hover {
+		max-height: none;
+	}
+	nav #menu > li {
+		display: block;
+		border: none;
+	}
+	nav #menu  > li:first-child {
+		border-top-width: 0;
+	}
+	nav #menu  li a {
+		padding: 10px;
+	}
+	nav #menu  ul li a {
+		padding-top: 10px;
+		padding-bottom: 10px;
+		padding-left: 20px;
+		font-weight: normal;
+	}
+	nav #menu  ul {
+		background-color: transparent!important;
+		position: relative;
+		border-left: 0;
+		border-right: 0;
+		border-bottom: 0;
+		left: 0;
+		-webkit-box-shadow: none;
+		-moz-box-shadow: none;
+		box-shadow: none;
+		opacity: 1;
+		display: block;
+		top: 0;
+		visibility: visible;
+		-webkit-transform: scale(1, 1);
+		width: 100%;
+	}
+	.show-menu:hover, .show-menu:active {
+		color: #fff;
+		border-bottom-color: #FFF;
+	}
+}
+@media (max-width: 979px) and (min-width: 768px) {
+	a.beam-me-up { display: none;}
+}
+.logo-container { text-align:center;}
+/* Mobile
+==================================================*/
+@media (max-width: 767px) {
+	#menu {
+		width: 100%;
+		float: none;
+	}
+	.nav-toggle, a.beam-me-up {
+		display: none;
+	}
+	.logo-container, #copyright, .social-container {
+		text-align: center;
+	}
+	.social, .social-container {
+		float: none !important;
+	}
+}
+
+h5 {
+  font-family: 'Roboto';
+  font-weight: 300;
+  font-size: 3em;
+  margin-top: 120px;
+  text-align: center;
+}
+h6 {
+  font-family: 'Roboto';
+  font-size: 2em;
+  text-decoration: underline;
+  color: #23aeac;
+  text-align: center;
+  margin-bottom: 80px;
+}
+p {
+  font-family: 'Roboto';
+  text-align: center;
+  font-size: 1.1em;
+}
+
+/* Home Footer */
+.homeFooter {padding-bottom: 35px; text-align: center; background: #fff; color: #888}
+
+h4 {
+  font-family: 'Roboto';
+  font-size: 2em;
+  text-decoration: underline;
+  color: #23aeac;
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+body {height:680px;}
