@@ -68,7 +68,7 @@ h6 {
     font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
     font-weight: 700;
     color: #fff;
-    background-color: #1ee2e7;
+    background-color: #27B6C7;
 }
 
 .btn-primary:hover,
@@ -76,9 +76,9 @@ h6 {
 .btn-primary:active,
 .btn-primary.active,
 .open .dropdown-toggle.btn-primary {
-    border-color: #17d0d5;
+    border-color: #27B6C7;
     color: #fff;
-    background-color: #17d0d5;
+    background-color: #27B6C7;
 }
 
 .btn-primary:active,
@@ -102,26 +102,26 @@ fieldset[disabled] .btn-primary:active,
 .btn-primary.disabled.active,
 .btn-primary[disabled].active,
 fieldset[disabled] .btn-primary.active {
-    border-color: #1ee2e7;
-    background-color: #1ee2e7;
+    border-color: #27B6C7;
+    background-color: #27B6C7;
 }
 
 
 .btn-primary .badge {
-    color: #1ee2e7;
+    color: #27B6C7;
     background-color: #fff;
 }
 
 .btn-xl {
     padding: 20px 40px;
-    border-color: #1ee2e7;
+    border-color: #27B6C7;
     border-radius: 3px;
     text-transform: uppercase;
     font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
     font-size: 18px;
     font-weight: 700;
     color: #fff;
-    background-color: #1ee2e7;
+    background-color: #27B6C7;
 }
 
 .btn-xl:hover,
@@ -129,9 +129,9 @@ fieldset[disabled] .btn-primary.active {
 .btn-xl:active,
 .btn-xl.active,
 .open .dropdown-toggle.btn-xl {
-    border-color: #17d0d5;
+    border-color: #27B6C7;
     color: #fff;
-    background-color: #17d0d5;
+    background-color: #27B6C7;
 }
 
 .btn-xl:active,
@@ -155,8 +155,8 @@ fieldset[disabled] .btn-xl:active,
 .btn-xl.disabled.active,
 .btn-xl[disabled].active,
 fieldset[disabled] .btn-xl.active {
-    border-color: #1ee2e7;
-    background-color: #1ee2e7;
+    border-color: #27B6C7;
+    background-color: #27B6C7;
 }
 
 .btn-xl .badge {
@@ -256,6 +256,7 @@ fieldset[disabled] .btn-xl.active {
     }
 }
 
+
 header {
     text-align: center;
     color: #fff;
@@ -281,6 +282,7 @@ header .intro-text .intro-lead-in {
     font-size: 22px;
     font-style: italic;
     line-height: 22px;
+    z-index: 10px;
 }
 
 header .intro-text .intro-heading {
@@ -347,30 +349,8 @@ section h3.section-subheading {
 }
 
 
-
-.team-member {
-    margin-bottom: 50px;
-    text-align: center;
-}
-
-.team-member img {
-    margin: 0 auto;
-    border: 7px solid #fff;
-}
-
-.team-member h4 {
-    margin-top: 25px;
-    margin-bottom: 0;
-    text-transform: none;
-}
-
-.team-member p {
-    margin-top: 0;
-}
-
-
 section#contact {
-    background-color: #222;
+    background-color: #434443;
     background-image: url();
     background-position: center;
     background-repeat: no-repeat;
@@ -388,48 +368,36 @@ section#location .section-heading {
 }
 
 footer {
-    padding: 25px 0;
-    text-align: center;
+	background: #434443;
+	min-height: 100px;
+	padding: 50px 0 50px 0;
 }
 
-footer span.copyright {
-    text-transform: uppercase;
-    text-transform: none;
-    font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
-    line-height: 40px;
+footer hr {
+	border: 2px solid #27B6C7;
+	border-image: none;
 }
 
-footer ul.quicklinks {
-    margin-bottom: 0;
-    text-transform: uppercase;
-    text-transform: none;
-    font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
-    line-height: 40px;
+footer p {
+	color: #FFFFFF;
+	margin: 0;
+	display: inline;
 }
 
-ul.social-buttons {
-    margin-bottom: 0;
+footer h4 {
+	color: #FFFFFF;
+	text-transform: uppercase;
+	font-size: 1.6em;
 }
 
-ul.social-buttons li a {
-    display: block;
-    width: 40px;
-    height: 40px;
-    border-radius: 100%;
-    font-size: 20px;
-    line-height: 50px;
-    outline: 0;
-    color: #fff;
-    background-color: #222;
-    -webkit-transition: all .3s;
-    -moz-transition: all .3s;
-    transition: all .3s;
+.socialIcons {
+	font-size: 1.8em;
+	color: #ffffff;
+  align: center;
 }
 
-ul.social-buttons li a:hover,
-ul.social-buttons li a:focus,
-ul.social-buttons li a:active {
-    background-color: #1ee2e7;
+.socialIcons:hover {
+  background-color: #27B6C7;
 }
 
 .btn:focus,
@@ -575,7 +543,7 @@ body {
 }
 
 .back-to-top:hover {
-  background-color: #17d0d5;
+  background-color: #27B6C7;
   opacity: 1
 }
 
