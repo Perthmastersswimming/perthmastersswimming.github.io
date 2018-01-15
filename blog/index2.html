@@ -1,0 +1,32 @@
+<html ng-app="RSSFeed">
+  <head> 
+  <meta name="theme-color" content="#5F04B4" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Blog | Perth Masters Swimming Club</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link type="text/css" rel="stylesheet" href="http://perthmasters.co.uk/blog/style.css"/>  
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.6.6/angular.jss"></script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.19.3/moment.js"></script> 
+<script type="text/javascript" src="http://perthmasters.co.uk/blog/script.js"></script>
+  </head>
+  <body ng-controller="FeedController as Feed">
+      <ul class="c-feed-listings">
+        <li class="c-feed-listings__item" ng-repeat="listing in Feed.feeds">{{ listing.name }}
+        </li>
+      </ul>
+      </div>
+    </nav>
+    <main class="c-content" role="main">
+      <ul class="c-feed">
+        <li class="c-feed__item" ng-repeat="post in Feed.posts">
+          <div class="c-feed__header"><a class="material-icons c-feed__expand" ng-href="{{post.link}}" target="_new">open_in_new</a><a class="c-feed__link" ng-href="{{post.link}}" target="_new">{{ post.title }}</a><small class="c-feed__date">{{ Feed.sanitiseDate(post.pubDate) }}</small></div><img class="c-feed__image" ng-if="post.thumbnail" ng-src="{{post.thumbnail}}">
+          <div class="c-feed__content">
+            <h1 class="c-feed__title">{{post.title}}</h1>
+            <p class="c-feed__standfirst">{{ Feed.sanitiseContent(post.description) }}</p>
+          </div>
+        </li>
+      </ul>
+    </main>
+  </body>
+</html>
