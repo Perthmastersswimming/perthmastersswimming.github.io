@@ -24,9 +24,15 @@
           }
     </style>
 	<script>
-	$('.nav a').click(function(){
-    $('.nav-collapse').collapse('hide');
-});	
+$(document).ready(function () {
+
+        $('.nav a').on('click', function () {
+
+            if ($(".btn-navbar").is(":visible") ){ $(".btn-navbar").trigger("click"); } //bootstrap 2.x
+            if ($(".navbar-toggler").is(":visible")) { $(".navbar-toggler").trigger("click"); } //bootstrap 3.x
+        });
+
+    });	
 	</script>
 </head>
 
