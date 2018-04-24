@@ -23,17 +23,6 @@
               }
           }
     </style>
-	<script>
-$(document).ready(function () {
-
-        $('.nav a').on('click', function () {
-
-            if ($(".btn-navbar").is(":visible") ){ $(".btn-navbar").trigger("click"); } //bootstrap 2.x
-            if ($(".navbar-toggle").is(":visible")) { $(".navbar-toggle").trigger("click"); } //bootstrap 3.x
-        });
-
-    });	
-	</script>
 </head>
 
 <body>
@@ -43,7 +32,8 @@ $(document).ready(function () {
     <div class="container">
 
       <!-- Brand -->
-      <a class="navbar-brand" href="#" target="_blank">
+      <a class="navbar-brand" href="#">
+	<img src="http://perthmasters.co.uk/Perth%20Masters%20Logo.jpg" width="30" height="30" class="d-inline-block align-top" alt="">      
         <strong>Perth Masters</strong>
       </a>
 
@@ -624,6 +614,19 @@ The pool is 25m long and we have sole use of all 5 lanes, during our training ti
     <script type="text/javascript" src="http://perthmasters.co.uk/app/js/bootstrap.min.js"></script>
     <!-- MDB core JavaScript -->
     <script type="text/javascript" src="http://perthmasters.co.uk/app/js/mdb.min.js"></script>
+
+<!-- custom scripts for navbar -->
+	<script>
+$(document).ready(function () {
+
+        $('.nav a').on('click', function () {
+
+            if ($(".btn-navbar").is(":visible") ){ $(".btn-navbar").trigger("click"); } //bootstrap 2.x
+            if ($(".navbar-toggle").is(":visible")) { $(".navbar-toggle").trigger("click"); } //bootstrap 3.x
+        });
+
+    });	
+	</script>
 </body>
 
 </html>
