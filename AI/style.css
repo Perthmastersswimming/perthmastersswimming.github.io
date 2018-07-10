@@ -21,15 +21,15 @@
 .chatbot__header {
   color: #fff;
   display: flex;
-  align-items: center !important;
-  justify-content: space-between !important;
+  align-items: center;
+  justify-content: space-between;
   background-color: #292460;
   height: 54px;
-  padding: 0 20px !important;
+  padding: 0 20px;
   width: 100%;
   cursor: pointer;
   transition: background-color 0.2s ease;
-  z-index: 1000px;
+  z-index: 1000;
 }
 .chatbot__header:hover {
   background-color: #393285;
