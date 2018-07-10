@@ -11,11 +11,13 @@
     max-width: 420px;
     right: 80px;
     top: auto;
+    z-index: 10000;
   }
 }
 .chatbot.chatbot--closed {
   top: auto;
   width: 100%;
+  z-index: 10000;
 }
 
 .chatbot__header {
@@ -29,29 +31,37 @@
   width: 100%;
   cursor: pointer;
   transition: background-color 0.2s ease;
+  z-index: 10000;
 }
 .chatbot__header:hover {
   background-color: #393285;
+  z-index: 1000;
 }
 .chatbot__header p {
   margin-right: 20px;
+  z-index: 1000;
 }
 
 .chatbot__close-button {
   fill: #fff;
+  z-index: 1000;
 }
 .chatbot__close-button.icon-speech {
   width: 20px;
   display: none;
+  z-index: 1000;
 }
 .chatbot--closed .chatbot__close-button.icon-speech {
   display: block;
+  z-index: 1000;
 }
 .chatbot__close-button.icon-close {
   width: 14px;
+  z-index: 1000;
 }
 .chatbot--closed .chatbot__close-button.icon-close {
   display: none;
+  z-index: 1000;
 }
 
 .chatbot__message-window {
@@ -60,6 +70,7 @@
   background-color: #fff;
   overflow-x: none;
   overflow-y: auto;
+  z-index: 1000;
 }
 @media screen and (min-width: 640px) {
   .chatbot__message-window {
