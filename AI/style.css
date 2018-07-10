@@ -73,13 +73,16 @@
 @media screen and (min-width: 640px) {
   .chatbot__message-window {
     height: 380px;
+    z-index: 1000;
   }
 }
 .chatbot__message-window::-webkit-scrollbar {
   display: none;
+  z-index: 1000;
 }
 .chatbot--closed .chatbot__message-window {
   display: none;
+  z-index: 1000;
 }
 
 .chatbot__messages {
