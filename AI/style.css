@@ -21,14 +21,15 @@
 .chatbot__header {
   color: #fff;
   display: flex;
-  align-items: center;
-  justify-content: space-between;
+  align-items: center !important;
+  justify-content: space-between !important;
   background-color: #292460;
   height: 54px;
-  padding: 0 20px;
+  padding: 0 20px !important;
   width: 100%;
   cursor: pointer;
   transition: background-color 0.2s ease;
+  z-index: 1000px;
 }
 .chatbot__header:hover {
   background-color: #393285;
@@ -306,7 +307,7 @@ body {
 }
 
 input {
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'Open Sans', sans-serif !important;
 }
 
 strong {
