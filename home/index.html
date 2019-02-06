@@ -1050,7 +1050,69 @@ if(w.attachEvent){w.attachEvent("onload",function(){w.clearInterval(run);})}}}(t
 
         <script src="https://platform.twitter.com/widgets.js" async></script>
         <script type="text/javascript" src="https://www.britishswimming.org/static/CACHE/js/b8faf1e9d8a9.js" defer></script>
+        <script>
+        
+document.querySelector('.button').onmousemove = (e) => {
 
+	const x = e.pageX - e.target.offsetLeft
+	const y = e.pageY - e.target.offsetTop
+
+	e.target.style.setProperty('--x', `${ x }px`)
+	e.target.style.setProperty('--y', `${ y }px`)
+	
+}
+	
+$('body').progressBar(
+	{
+    throttleTime: 100,
+    debounceTime: 200,
+    progressBarHeight: 3,
+    progressBarColor: 'transparent',
+    progressBarValueColor: '#ff3571',
+	});
+	
+$(".hiperlink").click(function() {
+    $([document.documentElement, document.body]).animate({
+        scrollTop: $(".every-idea").offset().top
+    }, 1500);
+});
+
+
+$(".logo").click(function() {
+    $([document.documentElement, document.body]).animate({
+        scrollTop: $("body").offset().top
+    }, 1000);
+});
+
+
+	
+var $animation_elements = $('.animation-element');
+var $window = $(window);
+
+function check_if_in_view() {
+  var window_height = $window.height();
+  var window_top_position = $window.scrollTop();
+  var window_bottom_position = (window_top_position + window_height);
+
+  $.each($animation_elements, function() {
+    var $element = $(this);
+    var element_height = $element.outerHeight();
+    var element_top_position = $element.offset().top;
+    var element_bottom_position = (element_top_position + element_height);
+
+    //check to see if this current container is within viewport
+    if ((element_bottom_position >= window_top_position) &&
+      (element_top_position <= window_bottom_position)) {
+      $element.addClass('in-view');
+    } else {
+      $element.removeClass('in-view');
+    }
+  });
+}
+
+$window.on('scroll resize', check_if_in_view);
+$window.trigger('scroll');
+        </script>
         
     </body>
 </html>
